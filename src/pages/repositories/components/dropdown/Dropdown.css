@@ -1,0 +1,60 @@
+#dropdown-basic {
+  background-color: #21262D;
+  border: 1px solid #c7cfd7;
+  border-radius: 6px;
+  color: #c7cfd7;
+  margin-right: 12px;
+  padding: 6px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 16px;
+  padding-bottom: 7px;
+}
+
+#dropdownArea {
+  background-color: #21262D;
+  border: 1px solid #c7cfd7;
+  border-radius: 6px;
+  width: 250px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-item {
+  border-bottom: 1px solid #282c31;
+  color: #c7cfd7;
+}
+
+.new-drop {
+  padding: 6px 12px;
+  background-color: #238636 !important;
+  border: 1px solid #238636 !important;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fafafa !important;
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 36px !important;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: left 14px center !important;
+  background-image: url("../../../../assets/img/new-repo.svg") !important;
+  cursor: pointer;
+  margin-left: 16px;
+}
+
+.repo-star {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #21262D !important;
+  color: #b1b9c0;
+  padding: 11px 14px !important ;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 0 !important;
+  border-bottom-right-radius: 5px !important;
+  border-top-right-radius: 5px !important;
+  border: 1px solid #b1b9c0;
+}

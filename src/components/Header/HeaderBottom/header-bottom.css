@@ -1,0 +1,118 @@
+.header-bottom {
+  padding-top: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #282c31;
+  background-color: #0d1117;
+  width: 100%;
+  z-index: 20;
+  position: relative;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.header-link {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #c2cad1;
+  text-decoration: none;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition-duration: 0.3s;
+  margin-bottom: 12px;
+  position: relative;
+    display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-link:hover {
+  background-color: #34394280;
+  color: #c2cad1;
+}
+
+.header-link span {
+  background-color: #343942;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 9px;
+  z-index: 25;
+  
+}
+
+.header-list li {
+  margin-right: 24px;
+}
+
+.header-list li .header-link {
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  background-position: top 8px left 4px;
+  padding-left: 30px;
+}
+
+.header-list li:nth-child(1) .header-link {
+  background-image: url("../../../assets//img/header-overview.svg");
+}
+
+.header-list li:nth-child(2) .header-link {
+  background-image: url("../../../assets//img/header-repositories.svg");
+}
+
+.header-list li:nth-child(3) .header-link {
+  background-image: url("../../../assets//img/header-projects.svg");
+}
+
+.header-list li:nth-child(4) .header-link {
+  background-image: url("../../../assets//img/header-package.svg");
+}
+
+.header-list li:nth-child(5) .header-link {
+  background-image: url("../../../assets//img/header-star.svg");
+}
+
+.user-fixed {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 8%;
+}
+
+.user-fixed img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.user-fixed-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #c2cad1;
+}
+
+@media screen and (max-width:1230px) {
+  .user-fixed {
+    display: none;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .header-bottom {
+    overflow-x: scroll;
+  }
+  .header-bottom::-webkit-scrollbar {
+    height: 0;
+  }
+}

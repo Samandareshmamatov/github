@@ -1,0 +1,140 @@
+.repositories {
+  width: 100%;
+}
+
+.repositories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid #282c31;
+}
+
+.drop-box {
+  display: flex;
+  align-items: center;
+}
+
+.repository-input {
+  display: block;
+  width: 500px;
+  padding: 8px 8px 11px 12px;
+  border: 1px solid #282c31;
+  background-color: #0d1117;
+  height: 28px;
+  margin-right: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+}
+
+.repository-input::placeholder {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #6e7681;
+}
+
+.repo-buttons {
+  width: 150px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.repo-btn {
+  background-color: transparent;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #949fae;
+  border: 1px solid #949fae;
+  transition-duration: 0.3s;
+}
+
+.repo-btn:hover {
+    color: #fff;
+    background-color: #393e45;
+}
+
+.repo-btn-dis {
+  background-color: transparent;
+  padding: 4px 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #494f56;
+  border: 1px solid #494f56;
+  transition-duration: 0.3s;
+  cursor: none;
+}
+
+.repo-btn-dis:hover {
+  cursor: auto;
+}
+
+.lds-ring {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 40px auto;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  margin: 12px;
+  border: 12px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.1s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width:990px){
+  .repositories-header {
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:580px){
+  .repository-input {
+    max-width: 350px;
+    width: 100%;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .drop-box {
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,136 @@
+.home-container {
+  display: flex;
+  justify-content: space-between;
+}
+.home-left {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #19212d;
+  height: 95vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.home-left::-webkit-scrollbar {
+  width: 5px;
+}
+
+.home-left::-webkit-scrollbar-track {
+  background: #212428;
+}
+
+.home-left::-webkit-scrollbar-thumb {
+  background: #67676737;
+  transition-duration: 0.15s;
+  border-radius: 8px;
+}
+
+.home-left::-webkit-scrollbar-thumb:hover {
+  background: #6767677b;
+}
+
+.home-img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.home-item {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 8px;
+}
+
+.home-item-text {
+  display: inline-block;
+  max-width: 340px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  color: #afafaf;
+  text-decoration: none;
+}
+
+.home-top-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.home-left-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  transition-duration: 0.3s;
+  margin: 6px 0;
+}
+
+.home-left-text {
+  width: 100%;
+  margin: 4px auto;
+  border: 1px dashed #afafaf;
+  color: #afafaf;
+  font-size: 12px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.home-right {
+  width: 100%;
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-right-btn {
+  margin: 160px 0;
+  border: 1px solid #0066cc;
+  color: #0066cc;
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 16px;
+  width: 250px;
+  transition-duration: 0.3s;
+  text-align: center;
+  margin-top: 0;
+}
+
+.home-right-btn:hover {
+  background-color: #0066cc;
+  font-weight: 700;
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+@media screen and (max-width: 990px) {
+  .home-container {
+    flex-direction: column;
+  }
+  .home-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #19212d;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 8px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .home-right {
+    width: 100%;
+    padding: 40px 15px;
+    overflow: hidden;
+  }
+}

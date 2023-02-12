@@ -1,0 +1,113 @@
+.packages {
+  width: 100%;
+}
+
+.packages p {
+  color: #8b949e;
+}
+
+.packages-top {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px 20px;
+  gap: 12px;
+}
+
+.packages-text {
+  text-align: center;
+}
+
+.packages-title {
+  color: #c9d1d9;
+  text-align: center;
+  font-size: 32px;
+}
+
+.packages-choose {
+  color: #c9d1d9;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.packages-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.packages-item {
+  border: 1px solid #4a4f55;
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  width: 296px;
+}
+
+.packages-inner-title {
+  font-size: 20px;
+  color: #c9d1d9;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.packages-inner-text {
+  font-size: 12px;
+}
+
+.packages-inner-title span {
+  display: inline-block;
+  width: 26px;
+  background-color: #fff;
+  height: 26px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75% 75%;
+}
+
+.packages-btn {
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #21262d;
+  border: 1px solid #8b949e;
+  border-radius: 6px;
+  color: #c9d1d9;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.packages-btn:hover {
+  background-color: #4a4f55;
+  color: #c9d1d9;
+  border: 1px solid #aab5c2;
+  color: #c9d1d9;
+}
+
+.packages-item:nth-child(1) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-docker.svg");
+}
+
+.packages-item:nth-child(2) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-apache.svg");
+}
+
+.packages-item:nth-child(3) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-nuget.svg");
+}
+
+.packages-item:nth-child(4) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-ruby.svg");
+}
+
+.packages-item:nth-child(5) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-npm.svg");
+}
+
+.packages-item:nth-child(6) .packages-inner-title span {
+  background-image: url("../../assets/img/packages-container.svg");
+}
